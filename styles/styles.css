@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
@@ -19,6 +29,7 @@ h2 {
     margin-top: 0;
     line-height: 1.172;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .header {
@@ -28,9 +39,7 @@ h2 {
     margin: 0 auto;
 }
 
-nav {
-    width: 1170px;
-    margin: 0 auto;
+nav.container {
     display: flex;
 }
 
@@ -73,6 +82,7 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-between;
     }
 
 
@@ -93,6 +103,18 @@ a:hover, a:focus {
 a {
     color: #757575;
 }
+
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    }
+
+section {
+    padding: 94px 0;
+}
+
 .banner {
     background-color: #2F303A;
     padding: 180px 450px;
@@ -117,13 +139,6 @@ a {
 
 .banner button:hover {
     background-color: #188CE8;
-}
-
-.qualities {
-    width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    padding: 94px 0px;
 }
 
 .quality {
@@ -154,12 +169,6 @@ a {
 
 section.about {
     text-align: center;
-    margin: 0 auto;
-    width: 1200px;
-}
-
-.about img {
-    margin: 0 15px;
 }
 
 .person {
@@ -167,7 +176,6 @@ section.about {
 }
 
 .block {
-    margin: 0 15px;
     background-color: white;
     text-align: center;
 }
@@ -177,11 +185,6 @@ section.about {
     text-align: center;
     background-color: #F5F4FA;
     padding: 94px 0;
-}
-
-.team>ul {
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .team .block {
@@ -205,10 +208,6 @@ p.position {
     padding: 60px 0 51px 0;
 }
 
-.container {
-    width: 1170px;
-    margin: 0 auto;
-}
 
 a.logo-footer {
     color: #FFFFFF;
@@ -243,20 +242,11 @@ address a {
 
 /* Portfolio */
 
-.portfolio {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 79px;
-}
 
 ul.filter {
     justify-content: center;
     display: flex;
     margin-bottom: 20px;
-    padding-top: 94px;
-    width: 1200px;
 }
 
 button {
@@ -285,8 +275,12 @@ button:hover {
     color: #FFFFFF;
 }
 
+.portfolio {
+    flex-wrap: wrap;
+}
+
 .project {
-    margin: 14px;
+    margin: 15px 0;
     border: solid 1px #EEEEEE;
     
 }
@@ -296,17 +290,26 @@ button:hover {
 }
 
 h2.title {
-    margin: 20px 24px 0;
+    padding: 20px 24px 0;
     line-height: 2;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.06em;
+    margin: 0;
+    text-align: left;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
 }
 
 p.info {
-    margin: 4px 24px 20px 24px;
+    padding: 4px 24px 20px 24px;
     font-size: 16px;
     color: #757575;
     letter-spacing: 0.03em;
     line-height: 1.875;
+    margin: 0;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    }
 }

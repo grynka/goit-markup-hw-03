@@ -46,12 +46,12 @@ max-width: 100%;
 
 nav.container {
     display: flex;
+    align-items: center;
 }
 
 .header a {
     text-decoration: none;
     font-size: 14px;
-    vertical-align: sub;
     line-height: 1.172;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -78,8 +78,11 @@ span.web {
 
 nav a {
     color: #212121;
-    margin-right: 50px;
     font-weight: 500;
+}
+
+nav li:not(:last-child) {
+    margin-right: 50px;
 }
 
 ul {
@@ -95,9 +98,12 @@ a:hover, a:focus {
     color: #2196F3;
 }
 
+.contacts {
+    margin-left: auto;
+}
+
 .mail {
-    margin-left: 280px;
-        color: #757575;
+    color: #757575;
 }
 
 .tel {
@@ -320,3 +326,11 @@ p.info {
     line-height: 1.875;
     margin: 0;
     }
+
+li.project {
+    margin-right: 30px;
+}
+
+.project:nth-child(3n) {
+            margin-right: 0;
+        }
